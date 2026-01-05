@@ -1,0 +1,198 @@
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+li a{
+    font-family: fantasy;
+    text-decoration: none;
+}
+
+li{
+    margin: 0 5em;
+}
+
+h1{
+    font-family: fantasy;
+    font-weight: 75;
+    color: hotpink;
+}
+
+h2{
+    font-family: fantasy;
+    font-weight: 75;
+    color: hotpink;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition */
+nav a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 0.25rem; 
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover, nav a:active {
+    color: hotpink;
+}
+
+nav a.current {
+    color: hotpink;                 
+    border-bottom: 3px solid hotpink; 
+}
+
+body.pagina-met-sidebar {
+    display: flex;
+    margin: 0;
+}
+
+body.pagina-met-sidebar .sidebar {
+    width: 40%;
+}
+
+body.pagina-met-sidebar .sidebar img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+body.pagina-met-sidebar .content {
+    width: 60%;
+    padding: 0%;
+    margin-top: 2rem;
+}
+
+.intro article h2 { 
+    text-align: center; 
+    margin-bottom: 1rem; 
+}
+
+.intro article p{
+    text-align: center;
+}
+
+.navigatie {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body.pagina-met-sidebar main {
+    margin-top: 60px; 
+    padding: 2rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transition */
+.intro article a {
+    display: block;        
+    width: fit-content;
+    margin: 1rem auto 0;
+    background-color: hotpink;       
+    font-family: fantasy;
+    font-weight: 75;
+    font-size: x-large;
+    padding: 0.75rem 1.5rem;      
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.intro article a:hover {
+    background-color: deeppink;   
+    transform: scale(1.05);       
+}
+
+.beelden-container {
+    display: flex;
+    gap: 1rem; 
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: stretch; 
+    height: 80vh; 
+}
+
+.beelden-container article {
+    flex: 1 1 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden; 
+    padding: 0.5rem;
+}
+
+.beelden-container article video, .beelden-container article img {
+    height: 60vh; 
+    width: auto; 
+    max-width: 100%;
+    object-fit: contain; 
+}
+
+.beelden-container article h2, .beelden-container article p {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+h1.titel-3 {
+    font-family: fantasy;
+    font-weight: 75;
+    text-align: center;
+}
+
+.inspiratie-item {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-direction */
+.inspiratie-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.inspiratie-item h2, .inspiratie-item p {
+    width: 100%;
+}
+
+.inspiratie-item img {
+    width: 30%;
+    max-width: 250px;
+    height: auto;
+}
+
+.inspiratie-tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
